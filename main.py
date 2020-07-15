@@ -124,6 +124,7 @@ class ItemEnterEventListener(EventListener):
 
 
 string_list = []
+path = ""
 
 ##############################
 # database functions
@@ -132,9 +133,11 @@ string_list = []
 #=============================
 def read_database():
 	global string_list
+	global path
 		
 	path = os.getcwd()
 	path = path + "/.local/share/ulauncher/extensions/com.github.lyimes.get-it-fast-a-ulauncher-extension"
+	print(path)
 
 	try: #read the database
 		print("reading the database")
@@ -186,12 +189,13 @@ def read_database():
 def add_item(text):
 	print(f"insert item called to insert: {text}")
 	global string_list
+	global path
 	
 	insert_text = str(text)
 	
 	#string_list.append(text)
 	
-	conn = sqlite3.connect('text_database.db')
+	conn = sqlite3.connect(path + "/" + 'text_database.db')
 	cursor = conn.cursor()
 
 	# inserindo dados na tabela
@@ -214,7 +218,7 @@ def add_item(text):
 def delete_item(num):
 	global string_list
 	
-	conn = sqlite3.connect('text_database.db')
+	conn = sqlite3.connect(path + "/" + 'text_database.db')
 	
 	cursor = conn.cursor()
 	cursor.execute("""
