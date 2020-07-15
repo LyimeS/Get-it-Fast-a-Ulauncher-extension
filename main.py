@@ -43,7 +43,7 @@ class KeywordQueryEventListener(EventListener):
                 ExtensionResultItem(icon='images/icon.png', #image
                                     name='Your list is empty. Type "add" to add a new item', # text that appears when you type "delete"
                                     description="Or click here to access our GitHub page for help",
-                                    on_enter=OpenUrlAction("http://www.google.com"))
+                                    on_enter=OpenUrlAction("https://github.com/LyimeS/Get-it-Fast-a-Ulauncher-extension"))
             	])
             	#return RenderResultListAction(items)
             
@@ -96,7 +96,7 @@ class KeywordQueryEventListener(EventListener):
                 ExtensionResultItem(icon='images/icon.png', #image
                                     name='Are you lost?', # text that appears when you type "delete"
                                     description="Open our help section on GitHub",
-                                    on_enter=OpenUrlAction("http://www.google.com"))
+                                    on_enter=OpenUrlAction("https://github.com/LyimeS/Get-it-Fast-a-Ulauncher-extension"))
             ])
 
 
@@ -132,14 +132,10 @@ string_list = []
 #=============================
 def read_database():
 	global string_list
-	
-	#pre_path = os.getcwd()
+		
 	path = os.getcwd()
-	if "ulauncher" not in path:
-		path = path + "/.local/share/ulauncher/extensions/get-it-fast"
-	#path = pre_path + "/.local/share/ulauncher/extensions/get-it-fast/"
-	print(path)
-	
+	path = path + "/.local/share/ulauncher/extensions/com.github.lyimes.get-it-fast-a-ulauncher-extension"
+
 	try: #read the database
 		print("reading the database")
 		conn = sqlite3.connect(path + '/' + 'text_database.db')
