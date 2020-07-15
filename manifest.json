@@ -1,0 +1,19 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Get it Fast",
+  "description": "A faster way to copy things to your clipboard",
+  "developer_name": "LyimeS",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "keyword",
+      "type": "keyword",
+      "name": "keyword",
+      "description": "You can change the keyword if you want. The default is 'fst'",
+      "default_value": "fst"
+    }
+  ]
+}
