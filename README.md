@@ -2,7 +2,7 @@
 ## How to add items:
 * Copy some text (or emoticon) you have to use oftenly. (Hope it is the last time you do it)
 * Open Ulauncher and call this extension using your keyword ("fst" by default).
-* Type "input", press space bar, and paste the text you copied.
+* Type "add", press space bar, and paste the text you copied.
 * Press enter
 
 ## How to get items:
