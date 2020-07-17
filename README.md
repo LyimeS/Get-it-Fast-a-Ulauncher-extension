@@ -1,15 +1,18 @@
 # How to use it:
 ## How to add items:
+![add.gif](add.gif)
 * Copy some text (or emoticon) you have to use oftenly. (Hope it is the last time you do it)
 * Open Ulauncher and call this extension using your keyword ("fst" by default).
 * Type "add", press space bar, and paste the text you copied.
 * Press enter
 
 ## How to get items:
+![get.gif](get.gif)
 * Open Ulauncher and call this extension using your keyword ("fst" by default).
 * Select the item you want in the list. It will be copied to your clipboard automatically.
 
 ## How to delete items:
+![delete.gif](delete.gif)
 * Open Ulauncher and call this extension using your keyword ("fst" by default).
 * Type "delete" and select the item you want to remove from the list.
 
